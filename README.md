@@ -1,6 +1,6 @@
 ## Running the Miniproject Application 
 
-## backend (python):
+## backend (django):
 
 **navigate this backend folder
 
