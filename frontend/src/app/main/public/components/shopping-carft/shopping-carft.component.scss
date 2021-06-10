@@ -1,0 +1,59 @@
+
+.dialog_container{
+	height: 80vh;
+    width: 40vw;
+    padding-bottom: 20px;
+	overflow: scroll;
+	overflow-x: hidden;
+	-ms-overflow-style: -ms-autohiding-scrollbar;  /* Internet Explorer 10+ */
+    scrollbar-width: none;  /* Firefox */
+    padding: 0px 15px 0px 25px;
+    
+    .item_row{
+        padding: 0px 11px;
+        margin: 0px 10px;
+        border-top: 1px solid #cccccc;
+    }
+    .craft_table{
+        width: 100%;
+        // border: 1px solid #cccccc;
+        border-collapse: collapse;
+        .qty_input{
+            border: 0px;
+            background: transparent;
+            margin: 0px;
+            padding: 0px;
+            width: 50px;
+            text-align: center;
+            margin-left: 10px;
+        }
+        td,th{
+            border-bottom: 1px solid #cccccc;
+        }
+        td{
+            padding: 5px;  
+        }
+        th{
+            padding: 15px 5px; 
+        }
+        tfoot{
+            background-color: whitesmoke;
+            td{
+                font-weight: bolder;  
+            }
+        }
+        
+    }
+
+    .item_row:last-of-type{
+        border-bottom: 1px solid #cccccc;
+    }
+    .pay_btn{
+        margin-top: 20px;
+        .icons{
+            margin-right: 10px;
+        }
+    }
+    
+
+}

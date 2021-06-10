@@ -1,0 +1,53 @@
+<div>
+    <mat-toolbar fxLayout="row" fxLayoutAlign="space-between center">
+        <span>Shooping Carft</span>
+        <span>
+            <button matTooltip="Close" matTooltipPosition="above" mat-icon-button (click)="close()">
+                <mat-icon>close</mat-icon>
+            </button>
+        </span>
+    </mat-toolbar>
+</div>
+<div class="dialog_container">
+    <h2>Your Carft :</h2>
+    <table class="craft_table" *ngIf="data?.length">
+        <thead>
+            <tr>
+                <th>Product Name</th>
+                <th>Product price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Cancel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of data;let i = index">
+                <td>{{item.product_name}}</td>
+                <td>{{item.price}}</td>
+                <td><input type="number" class="qty_input" [(ngModel)]="item.qty"></td>
+                <td>{{item.price * item.qty}}</td>
+                <td style="width: 20px;">
+                    <button mat-icon-button matTooltip="Remove from craft" matTooltipPosition="above" (click)="removeitem(item,i)"><mat-icon>remove</mat-icon></button>
+                </td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td style="text-align: right;" colspan="3">Total Payable</td>
+                <td>{{grandtotal}}</td>
+                <td></td>
+            </tr>
+        </tfoot>
+        
+    </table>
+
+    <div fxLayout="row" *ngIf="!data?.length" fxLayoutAlign="center start">
+            <p>Your carft is empty!</p>
+    </div>
+
+    <div fxLayout="row" fxLayoutAlign="end end" class="pay_btn" *ngIf="data?.length">
+        <button (click)="purshace()" mat-raised-button color="primary"> <mat-icon class="icons">payment</mat-icon>
+        <span>Shop now</span> </button>
+
+    </div>
+</div>

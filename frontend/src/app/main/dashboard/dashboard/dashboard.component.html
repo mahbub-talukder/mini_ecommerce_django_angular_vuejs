@@ -1,0 +1,83 @@
+<div class="w-100-p h-100-p" @fadeInOut>
+    <div fxLayout="row">
+        <div fxFlex="90" fxFlexOffset="5" fxLayout="row" fxLayoutAlign="space-between center">
+            <h2>Products</h2>
+            <!-- <mat-icon [matBadge]="craftlist?.length" class="carft_icon" matTooltip="See your carft" matTooltipPosition="above" (click)="craft_details()" matBadgeColor="warn">shopping_cart</mat-icon> -->
+        </div>
+    </div>
+    <section>
+        <div id="product_section" fxLayout="row">
+            <div fxFlex="90" fxFlexOffset="5" fxFlexAlign="center" fxLayout="row wrap" class="product_sections" fxLayoutAlign="space-around stretch">
+                <mat-spinner color="accent" diameter="30" *ngIf="spinner"></mat-spinner>
+                <p *ngIf="errorMessage">{{errorMessage}}</p>
+                <div [@animate]="{value:'*',params:{y:'100%'}}" class="view_card" *ngFor="let item of dataList">
+                    <div fxLayout="row" fxLayoutAlign="end start">
+                        <button mat-icon-button [matMenuTriggerFor]="moreMenu2" aria-label="More"
+                            (click)="$event.stopPropagation();">
+                            <mat-icon class="secondary-text">more_vert</mat-icon>
+                        </button>
+                        <mat-menu #moreMenu2="matMenu">
+                            
+                            <button mat-menu-item aria-label="remove" (click)="edit(item)">
+                                <mat-icon>edit</mat-icon>
+                                <span>Update</span>
+                            </button>
+                        </mat-menu>
+                    </div>
+                    <div fxLayout="row" fxLayoutAlign="center start">
+                        <img class="picture" src="/assets/images/cards/product.png" />
+                    </div>
+                    <div class="text_area">
+                        <p style="text-align: center;">{{item.product_name}}</p>
+                        <p style="text-align: center; color:#666;font-size:12px;line-height: 5px;">
+                            (Price - {{item.price}} BDT)</p>
+                        <p style="text-align: center;line-height: 5px;">{{item.brand}}</p>
+                        
+    
+                    </div>
+                </div>
+                <!-- <div *ngFor="let item of dataList">
+                    <mat-card class="product_card mat-elevation-z3">
+                        <div class="file-thumbnail" (mouseenter)="item.hoverClass='file-thumbnail-hover'"
+                            (mouseleave)="item.hoverClass=''">
+                            <div class="image_section" fxLayout="row" fxLayoutAlign="center center">
+                                <img src="/assets/images/cards/product.png" >
+                            </div>
+                            <div class="heading_section">
+                                <h4>{{item.product_name}}</h4>
+                                <p>{{item.brand}}</p>
+                                <div class="rating" fxLayout="row" fxLayoutGap="5px">
+                                    <div>
+                                        <span>Rating :</span>
+                                    </div>
+                                    <div fxLayout="row" fxLayoutGap="2px" class="rating">
+                                        <mat-icon>{{item.rating >=1 ? 'star' : 'grade'}}</mat-icon>
+                                        <mat-icon>{{item.rating >=2 ? 'star' : 'grade'}}</mat-icon>
+                                        <mat-icon>{{item.rating >=3 ? 'star' : 'grade'}}</mat-icon>
+                                        <mat-icon>{{item.rating >=4 ? 'star' : 'grade'}}</mat-icon>
+                                        <mat-icon>{{item.rating >=5 ? 'star' : 'grade'}}</mat-icon>
+                                    </div>
+                                </div>
+                                <div fxLayout="row" fxLayoutGap="5px" class="gross_sell">
+                                    <span>Price :</span>
+                                    <span>${{item.price}}</span>
+                                </div>
+
+                            </div>
+                            <div fxLayout="column" fxLayoutAlign="center center" [fxHide]="!item.hoverClass" [ngClass]="item.hoverClass">
+                                <div fxLayout="row" fxLayoutAlign="center center">
+                                    <button (click)="decrement()" mat-icon-button><mat-icon>remove</mat-icon></button>
+                                    <input type="number" min="0" class="qty" [(ngModel)]="qty">
+                                    <button (click)="increment()" mat-icon-button><mat-icon>add</mat-icon></button>
+                                </div>
+                                <div fxLayout="row" fxLayoutAlign="center center">
+                                    <span mat-stroked-button (click)="addtocraft(item)">{{item.added ? 'Added' : 'Add to Craft'}}</span>
+                                </div>
+                            </div>
+                        </div>
+                    </mat-card>
+                </div> -->
+            </div>
+        </div>
+    </section>
+</div>

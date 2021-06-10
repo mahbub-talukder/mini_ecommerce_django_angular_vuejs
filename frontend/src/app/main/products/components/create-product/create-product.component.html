@@ -1,0 +1,42 @@
+<div class="_container" fxLayout="row" fxLayoutAlign="center center" @fadeInOut>
+    <form  [formGroup]="myForm" class="form_container">
+        <mat-toolbar class="heading_toolbar">
+            <span>Create Products</span>
+        </mat-toolbar>
+        <div class="form_body">
+            <mat-form-field appearance="outline">
+                <mat-label>Product Name</mat-label>
+                <input type="text" matInput placeholder="Product Name" formControlName="product_name"/>
+            </mat-form-field>
+            
+            <mat-form-field appearance="outline">
+                <mat-label>Product Code</mat-label>
+                <input matInput type="text" placeholder="Product Code" formControlName="product_code"/>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Price</mat-label>
+                <input matInput type="text" placeholder="description" formControlName="price"/>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Brand</mat-label>
+                <input matInput type="text" placeholder="Brand" formControlName="brand"/>
+            </mat-form-field>
+            <mat-form-field  appearance="outline">
+                <mat-label>Product Expire Date</mat-label>
+                <input matInput [matDatepicker]="expire_date" placeholder="Select hire date" formControlName="expire_date">
+                <mat-datepicker-toggle matSuffix [for]="expire_date"></mat-datepicker-toggle>
+                <mat-datepicker #expire_date></mat-datepicker>
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Product Rating</mat-label>
+                <input matInput type="number" min="0" max="3" placeholder="Please give rating between 1 to 5" formControlName="rating"/>
+            </mat-form-field>
+            <div fxLayout="row" fxLayoutAlign="center center">
+                <button mat-stroked-button *ngIf="!edit_record" (click)="onFormSubmit()">Submit</button>
+                <button mat-stroked-button *ngIf="edit_record" (click)="onFormSubmit()">Update</button>
+            </div>
+            
+        </div>
+    </form>
+</div>
+

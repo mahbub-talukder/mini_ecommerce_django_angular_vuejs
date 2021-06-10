@@ -1,0 +1,23 @@
+#product_section{
+    .product_sections{ 
+        .view_card{
+            width: 240px;
+            height: 230px;
+            border: 1px solid #cccccc;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            .picture{
+                border-radius: 50%;
+                border: 1px solid #cccccc;
+                width: 60px;
+                height: 60px;
+                // margin-top: 10px;
+            }
+        }
+    }
+   
+}
+
+.carft_icon{
+    cursor: pointer;
+}

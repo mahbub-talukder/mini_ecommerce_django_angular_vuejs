@@ -1,0 +1,93 @@
+#product_section{
+    .product_sections{ 
+       
+        .product_card{ 
+            margin : 10px;
+            padding : 0px !important;
+            height: 230px;
+            width: 220px;
+            border-radius: 15px;
+            // background: whitesmoke !important;
+            .file-thumbnail{
+                height: 230px;
+                width: 220px;
+                border-radius: 15px;
+                position: relative;
+                .image_section{
+                    padding: 20px 20px 8px 20px;
+                    border-top-left-radius: 15px;
+                    border-top-right-radius: 15px;
+                    background: #80008030;
+                    img{
+                        height: 100px;
+                        width: 100px;
+                        border-radius: 50%;
+                        filter: drop-shadow(0px 10px 6px rgba(0, 0, 0, 0.2));
+                        // border: 2px solid #cccccc;
+
+                        
+                    }
+                }
+                .heading_section{
+                    padding-left: 16px;
+                    .checked{
+                        color: orange;
+                    }
+                    span{
+                        font-size: 14px;
+                    }
+                    p{
+                        line-height: 0px;
+                    }
+                    h4{
+                        line-height: 0px;
+                        font-weight: bold;
+                    }
+                    .rating{
+                        mat-icon{
+                            font-size: 14px;
+                        }
+                    }
+                }
+                
+            }
+            
+            .file-thumbnail-hover{
+                height: 230px;
+                width: 220px;
+                border-radius: 15px;
+                position: absolute;
+                background: rgba(0, 0, 0, 0.3);
+                // opacity: 0.5;
+                left: 0;
+                top: 0;
+                span{
+                    width: 220px;
+                    padding: 8px 0px;
+                    // border: 1px solid #666;
+                    color:white;
+                    background-color: #f76868cf;
+                    box-shadow: 1px 0px 7px 1px lightgrey;
+                    text-align: center;
+                    font-size: 18px;
+                    cursor: pointer;
+                }
+                .qty{
+                    width: 30px;
+                    margin: 0px;
+                    padding: 0px;
+                    border-radius: 2px;
+                    text-align: center;
+                    appearance: none;
+                    -webkit-appearance: none;
+                }
+            }
+            
+        }
+    }
+   
+}
+
+.carft_icon{
+    cursor: pointer;
+}
