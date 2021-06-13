@@ -1,25 +1,31 @@
 ## Running the Miniproject Application 
 
-## backend (Django):
+## backend (python):
 
 **navigate this backend folder
 
 first of all you can create virtual environment for running your project sperately. or you can run this globally
  #for virtual environemt create (for windows)
- -> py -m venv env
+ 
+<code> py -m venv env </code>
+ 
  #for virtual environment activate
- -> env\Scripts\activate
+ 
+<code> env\Scripts\activate </code>
 
 After that
 install all dependencies (packages) in according to requirement.txt
-you can install all package by running one command : py -m install -r requirements.txt
+you can install all package by running one command :
+
+<code> py -m install -r requirements.txt </code>
 
 Create the DB tables first:
-python manage.py migrate
+
+<code> python manage.py migrate </code>
 
 Run the development web server:
 
-python manage.py runserver 8080
+<code> python manage.py runserver </code>
 
 ## frontend (vue js):
 
@@ -27,11 +33,11 @@ python manage.py runserver 8080
 
 #for installing all packages run command:
 
-npm install
+ <code> npm install </code>
 
 Run the development web server:
 
-npm run serve
+<code> npm run serve </code>
 
 Open the URL http://localhost:8080/ to access the application.
 
@@ -42,15 +48,13 @@ Open the URL http://localhost:8080/ to access the application.
 
 #for installing all packages run command:
 
-npm install
+<code> npm install </code>
 
 Run the development web server:
 
-ng s -o 
+<code> ng s -o  </code>
 
 Open the URL http://localhost:4200/ to access the application.
-
-
 
 written by Mahbub Talukder
 
