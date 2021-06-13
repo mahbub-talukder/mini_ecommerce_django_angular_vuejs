@@ -21,6 +21,20 @@ Run the development web server:
 
 python manage.py runserver 8080
 
+## frontend (vue js):
+
+**navigate this frontend vue folder
+
+#for installing all packages run command:
+
+npm install
+
+Run the development web server:
+
+npm run serve
+
+Open the URL http://localhost:8080/ to access the application.
+
 
 ## frontend (angular):
 
@@ -35,6 +49,8 @@ Run the development web server:
 ng s -o 
 
 Open the URL http://localhost:4200/ to access the application.
+
+
 
 written by Mahbub Talukder
 
