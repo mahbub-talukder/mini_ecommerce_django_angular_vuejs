@@ -17,15 +17,15 @@ After that
 install all dependencies (packages) in according to requirement.txt
 you can install all package by running one command :
 
-<code> py -m install -r requirements.txt </code>
+<code> pip install -r requirements.txt </code>
 
 Create the DB tables first:
 
-<code> python manage.py migrate </code>
+<code> py manage.py migrate </code>
 
 Run the development web server:
 
-<code> python manage.py runserver </code>
+<code> py manage.py runserver </code>
 
 ## frontend (vue js):
 

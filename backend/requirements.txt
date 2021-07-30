@@ -1,0 +1,5 @@
+django >=0
+djangorestframework >=0
+django-cors-headers >=0
+PyJWT >=0
+mysqlclient >=0

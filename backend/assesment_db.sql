@@ -239,8 +239,8 @@ CREATE TABLE `users_user` (
 --
 
 INSERT INTO `users_user` (`id`, `last_login`, `is_superuser`, `first_name`, `last_name`, `is_staff`, `is_active`, `date_joined`, `name`, `email`, `password`) VALUES
-(1, NULL, 0, '', '', 0, 1, '2021-06-08 05:37:19.744156', 'Mahbub', 'mahbub@yopmail.com', 'pbkdf2_sha256$260000$ALlIZXuv7lJScF9WQYZ62W$eiCMNZ+FpkJYgzpJQi0YzXnlRACerk2i0Rw1d7VpPQM='),
-(3, NULL, 0, '', '', 0, 1, '2021-06-09 15:35:25.958350', 'Ripon', 'ripon@yopmail.com', 'pbkdf2_sha256$260000$Wp0M2eEYc9usZCqH2WLVde$gEiCPi7hsuKYK71e957atnHTs3GaEYkPflY9SrbLqRk=');
+(1, '2021-06-08 05:37:19.744156', 1, 'Mahbub', 'Talukder', 1, 1, '2021-06-08 05:37:19.744156', 'Mahbub', 'mahbub@yopmail.com', 'pbkdf2_sha256$260000$ALlIZXuv7lJScF9WQYZ62W$eiCMNZ+FpkJYgzpJQi0YzXnlRACerk2i0Rw1d7VpPQM='),
+(3, '2021-06-08 05:37:19.744156', 0, 'Ripon', 'Basak', 1, 1, '2021-06-09 15:35:25.958350', 'Ripon', 'ripon@yopmail.com', 'pbkdf2_sha256$260000$Wp0M2eEYc9usZCqH2WLVde$gEiCPi7hsuKYK71e957atnHTs3GaEYkPflY9SrbLqRk=');
 
 -- --------------------------------------------------------
 
