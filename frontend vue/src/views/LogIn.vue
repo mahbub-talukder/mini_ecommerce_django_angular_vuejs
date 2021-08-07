@@ -1,4 +1,4 @@
-<template lang="html">
+<template >
 
   <section class="log-in">
     <div class="login_intro">
@@ -46,7 +46,7 @@
 
 </template>
 
-<script lang="js">
+<script >
  import { validationMixin } from 'vuelidate'
  import axios from 'axios'
   import {

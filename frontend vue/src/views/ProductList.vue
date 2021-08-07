@@ -1,4 +1,4 @@
-<template lang="html">
+<template>
 
   <div class="users_container" >
     <div  class="heading" >
@@ -134,7 +134,7 @@
 
 </template>
 
-<script lang="js">
+<script >
 import axios from "axios";
   export default  {
     name: 'ProductList',

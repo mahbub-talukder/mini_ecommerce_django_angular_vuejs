@@ -1,4 +1,4 @@
-<template lang="html">
+<template >
 
   <div class="home_container">
     <div class="title_section">
@@ -52,7 +52,7 @@
 
 </template>
 
-<script lang="js">
+<script >
   import axios from 'axios'
   export default  {
     name: 'Dashboard',

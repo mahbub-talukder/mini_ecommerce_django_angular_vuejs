@@ -1,4 +1,4 @@
-<template lang="html">
+<template >
 <div class="_container"  >
     <div   class="form_container" >
         <div class="heading_toolbar">
@@ -54,7 +54,7 @@
 
 </template>
 
-<script lang="js">
+<script >
   import { validationMixin } from 'vuelidate'
   import {required} from 'vuelidate/lib/validators'
   import axios from 'axios'

@@ -4,7 +4,7 @@
   </div>
 </template>
 
-<script lang="js">
+<script >
 
   export default  {
     name: 'Progressbar',

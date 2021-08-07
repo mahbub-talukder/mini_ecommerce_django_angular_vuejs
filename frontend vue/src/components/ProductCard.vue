@@ -1,4 +1,4 @@
-<template lang="html">
+<template >
 
   <section class="product-card">
     <h1>product-card Component</h1>
@@ -6,7 +6,7 @@
 
 </template>
 
-<script lang="js">
+<script >
 
   export default  {
     name: 'ProductCard',

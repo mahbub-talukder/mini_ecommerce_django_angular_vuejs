@@ -1,4 +1,4 @@
-<template lang="html">
+<template >
 
   <section class="signup">
     <div class="signup_intro">
@@ -64,7 +64,7 @@
 
 </template>
 
-<script lang="js">
+<script >
   import { validationMixin } from 'vuelidate'
   import {required,email} from 'vuelidate/lib/validators'
   import axios from 'axios'
