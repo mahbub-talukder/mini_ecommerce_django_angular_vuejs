@@ -1,4 +1,4 @@
-## Running the Miniproject Application 
+## Running the Mini E-commerce Application 
 
 ## backend (Django):
 
